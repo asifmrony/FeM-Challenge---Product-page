@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./main.css">
+  
+</head>
+<body>
+  <div class="container">
+    <nav class="nav">
+        <div class="nav__brand">
+          <div class="nav__hamburger">
+            <svg viewBox="0 0 100 80" width="25" height="25">
+              <rect width="100" height="15"></rect>
+              <rect y="30" width="100" height="15"></rect>
+              <rect y="60" width="100" height="15"></rect>
+            </svg>
+          </div>
+          <div class="brand-logo">
+            <a href="#"><img src="./images/logo.svg" alt=""></a>
+          </div>
+          <div class="nav__navigation-bar">
+            <ul>
+              <li class="nav__close-mobile">&times;</li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Collections</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Men</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Women</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">About</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="nav__right-side">
+          <div class="cart">
+            <!-- <span class="cart__count">0</span> -->
+            <img src="./images/icon-cart.svg" alt="">
+          </div>
+          <div class="profile-image">
+            <img src="./images/image-avatar.png" alt="">
+          </div>
+          <div id="dropdown" class="dropdown-content">
+            <div class="dd-cart">
+              <div class="dd-cart__header">
+                Cart
+              </div>
+             
+              <div class="dd-cart__body is-empty">
+                <!-- TO-DO 2: if no product in the cart then show "Your cart is Empty" 
+                              - add class "is-empty" to dd-cart__body parent and add #product, #checkout div
+                              - remove class "have-product" from dd-cart__body parent 
+                -->
+                <!-- <div class="dd-pd">
+                  <div class="dd-pd-image">
+                    <img src="./images/image-product-1-thumbnail.jpg" alt="">
+                  </div>
+                  <div class="dd-pd-details">
+                    <h5 class="dd-pd-name">Fall Limited Edition Sneakers</h5>
+                    <p>
+                      <span class="dd-pd-price">$125.00</span>
+                      <span class="multiple-sign">+</span>
+                      <span class="dd-pd-count">3</span>
+                      <span class="dd-price-total">$375.00</span>
+                    </p>
+                  </div>
+                  <div class="dd-pd-delete">
+                    <svg width="14" height="16" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M0 2.625V1.75C0 1.334.334 1 .75 1h3.5l.294-.584A.741.741 0 0 1 5.213 0h3.571a.75.75 0 0 1 .672.416L9.75 1h3.5c.416 0 .75.334.75.75v.875a.376.376 0 0 1-.375.375H.375A.376.376 0 0 1 0 2.625Zm13 1.75V14.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 1 14.5V4.375C1 4.169 1.169 4 1.375 4h11.25c.206 0 .375.169.375.375ZM4.5 6.5c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Zm3 0c0-.275-.225-.5-.5-.5s-.5.225-.5.5v7c0 .275.225.5.5.5s.5-.225.5-.5v-7Z" id="a"/></defs><use fill="#C3CAD9" fill-rule="nonzero" xlink:href="#a"/></svg>
+                  </div>
+                </div>
+                <div class="dd-pd-checkout">
+                  <button type="button" class="checkout-btn">Checkout</button>
+                </div> -->
+                Your cart is empty
+              </div>
+            </div>
+          </div>
+        </div>
+    </nav>
+    
+    <main class="main-content">
+      <div class="pdd__wrap">
+        <div class="pdd">
+          <div class="pdd__image">
+            <div class="pdd__image-inner">
+              <div class="lightbox-on pdd__image-top">
+                <img src="./images/image-product-1.jpg" alt="">
+              </div>
+              <div class="pdd__image-bottom">
+                <!-- <div class="overlay"><img src="images/image-product-1-thumbnail.jpg"></div>
+                <div class="overlay"><img src="images/image-product-2-thumbnail.jpg"></div>
+                <div class="overlay"><img src="images/image-product-3-thumbnail.jpg"></div>
+                <div class="overlay"><img src="images/image-product-4-thumbnail.jpg"></div> -->
+              </div>
+            </div>
+          </div>
+          <div class="pdd__details">
+            <div class="pdd__details-inner">
+              <h6 class="pdd__details-company">sneaker company</h6>
+              <h1 class="pdd__details-name">Fall Limited Edition Sneakers</h1>
+              <p class="pdd__details-desc">These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+              <div class="pdd__details-price">
+                <span class="actual-price">$125.00</span>
+                <span class="discount-mark">50%</span>
+              </div>
+              <p class="previous-price"><del>$250.00</del></p>
+              <div class="pdd__details-add-to-cart">
+                <div class="pd-counter">
+                  <button type="button" class="minus-btn">
+                    <img src="./images/icon-minus.svg" alt="">
+                  </button>
+                  <span class="pd-count-value">1</span>
+                  <button type="button" class="plus-btn">
+                    <img src="./images/icon-plus.svg" alt="">
+                  </button>
+                </div>
+                <div class="pd-cart-btn">
+                  <button type="button" class="add-to-cart-btn">
+                    <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#fff" fill-rule="nonzero"/>
+                    </svg>
+                    Add to cart
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <div class="modal-container">
+      <span class="close lightbox-off">&times;</span>
+      <div class="modal-content">
+        <div class="mySlides pdd__image-top">
+          <img src="./images/image-product-1.jpg" alt="">
+        </div>
+        <div class="mySlides pdd__image-top">
+          <img src="./images/image-product-2.jpg" alt="">
+        </div>
+        <div class="mySlides pdd__image-top">
+          <img src="./images/image-product-3.jpg" alt="">
+        </div>
+        <div class="mySlides pdd__image-top">
+          <img src="./images/image-product-4.jpg" alt="">
+        </div>
+
+        <a href="javascript:void(0)" class="prev">&#10094;</a>
+        <a href="javascript:void(0)" class="next">&#10095;</a>
+
+        <div class="pdd__image-bottom">
+          <div class="overlay lightbox-overlay" onclick="currentSlide(1)">
+            <img src="images/image-product-1-thumbnail.jpg">
+          </div>
+          <div class="overlay lightbox-overlay" onclick="currentSlide(2)">
+            <img src="images/image-product-2-thumbnail.jpg">
+          </div>
+          <div class="overlay lightbox-overlay" onclick="currentSlide(3)">
+            <img src="images/image-product-3-thumbnail.jpg">
+          </div>
+          <div class="overlay lightbox-overlay" onclick="currentSlide(4)">
+            <img src="images/image-product-4-thumbnail.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://asifmrony.github.io">Asif Mahmud Rony</a>.
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
